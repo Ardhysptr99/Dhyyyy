@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>✨ StarterPack Project ✨</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
+    <link rel="stylesheet" href="src\style\login-style.css">
+    <title>Dhyyy Daily | Login</title>
     <!-- 👇 css code file 👇 -->
-    <link rel="stylesheet" href="./src/style/global.css"/>
+    
 </head>
 <body>
-    <div class="form-container sing-up-container">
-        <form action="#">
-            <h1>Create Account</h1>
-            <div class="social-container">
-                <a href="#facebook" class="social"> <i class="fab fa-facebook-f"></i></a>
-                <a href="#google" class="social"> <i class="fab fa-google-plus-g"></i></a>
-                <a href="#twitter" class="social"> <i class="fab fa-twitter-t"></i></a>
+    <div class="wrapper">
+        <form action="login-berhasil.html" id="login-form" method="post">
+            <h1> Login</h1>
+            <h2>Selamat Datang di D-Daily</h2>
+            <div class="input-box">                
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i> 
             </div>
-            <span> or use your email for registration</span>
-            <input type="text" placeholder="name" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="password">
-            <button>Sign Up</button>
+            <div class="input-box">                
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="remember-forget">
+                <label><input type="checkbox"> Ingat Saya</label>
+                <a href="#Lupapassword"> Lupa Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Tidak memiliki akun? <a href="#register"> Daftar Disini</a>
+                </p>
+            </div>
         </form>
     </div>
 
@@ -30,5 +41,6 @@
     
     <!-- 👇 javascript code file 👇 -->
     <script src="./src/js/index.js"></script>
+    <script src="src/js/login.js"></script>
 </body>
 </html>
