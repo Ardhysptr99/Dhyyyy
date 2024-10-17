@@ -12,15 +12,17 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="login-berhasil.html" id="login-form" method="post">
+        <form  id="login-form">
             <h1> Login</h1>
             <h2>Selamat Datang di D-Daily</h2>
+
             <div class="input-box">                
-                <input type="text" placeholder="Username" required>
+                <input type="text" name="Username" placeholder="Username" id="Username" >
                 <i class='bx bxs-user'></i> 
+
             </div>
             <div class="input-box">                
-                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Password" id="password" >
                 <i class='bx bxs-lock-alt'></i>
             </div>
 
@@ -28,7 +30,7 @@
                 <label><input type="checkbox"> Ingat Saya</label>
                 <a href="#Lupapassword"> Lupa Password?</a>
             </div>
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn" id="Login-form-submit">Login</button>
 
             <div class="register-link">
                 <p>Tidak memiliki akun? <a href="#register"> Daftar Disini</a>

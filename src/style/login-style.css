@@ -124,3 +124,8 @@
  .register-link p a:hover{
     text-decoration: underline;
  } 
+
+form div.incorrect input{
+   border-color: #f06272;
+    
+}

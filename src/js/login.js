@@ -1,16 +1,22 @@
+const form = document.getElementById("login-form")
+const username = document.getElementById("Username")
+const password = document.getElementById("password")
 
+form.addEventListener('submit', (e)=>{
+    // e.preventDefault() Prevent Submit
+    let errors = []
 
-document.getElementById('login-Form').addEventListener('submit', function(event) {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    const errorMessage = document.getElementById('errorMessage');
+    if(username){
+        errors = getLoginFormErrors(username.value,password.value);
 
-   
-    if (username === 'ardhysptr' && password === 'Nurmiaty1') {
-        errorMessage.style.display = 'none'; // Sembunyikan pesan error
-    } else {
-        event.preventDefault(); // Mencegah pengiriman form
-        errorMessage.textContent = 'Username atau password salah!';
-        errorMessage.style.display = 'block'; // Tampilkan pesan error
     }
-});
+})
+
+function getLoginFormErrors(username,password){
+    let errors = []
+
+    if(username === '' || username == null ){
+        errors.push("Harap isi Username")
+        Username
+    } 
+}
